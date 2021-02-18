@@ -14,14 +14,14 @@ struct AppView: View {
             .tabItem {
               VStack {
                 Image(systemName: "")
-                Text("Visitors")
+                Text("Writer")
               }
             }
           ReaderView()
             .tabItem {
               VStack {
                 Image(systemName: "lock")
-                Text("Admin")
+                Text("Reader")
               }
             }
         }

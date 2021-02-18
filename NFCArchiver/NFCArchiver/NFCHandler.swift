@@ -82,8 +82,15 @@ extension NFCHandler: NFCNDEFReaderSessionDelegate {
     }
     
     func write(_ tag: NFCNDEFTag) {
+        tag.readNDEF { (message, error) in
+            if let message = message {
+                let record = message.records.first
+                
+            }
+        }
+        let newTag = Tag()
         guard let payload = NFCNDEFPayload
-              .wellKnownTypeTextPayload(string: "test", locale: Locale.current)
+                .wellKnownTypeTextPayload(string: newTag.id.uuidString, locale: Locale.current)
               else {
                 handleError(NFCHandlerError.invalidated)
                 return

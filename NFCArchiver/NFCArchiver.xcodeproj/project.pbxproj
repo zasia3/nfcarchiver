@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		529E41A025C0B149000C1A78 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E419F25C0B149000C1A78 /* Tag.swift */; };
+		529E41A525C0B195000C1A78 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529E41A425C0B195000C1A78 /* Item.swift */; };
 		AD4334BD25A3405400755150 /* NFCArchiverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4334BC25A3405400755150 /* NFCArchiverApp.swift */; };
 		AD4334BF25A3405400755150 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4334BE25A3405400755150 /* AppView.swift */; };
 		AD4334C125A3405600755150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4334C025A3405600755150 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		529E419F25C0B149000C1A78 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		529E41A425C0B195000C1A78 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		AD4334B925A3405400755150 /* NFCArchiver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFCArchiver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4334BC25A3405400755150 /* NFCArchiverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCArchiverApp.swift; sourceTree = "<group>"; };
 		AD4334BE25A3405400755150 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
@@ -106,11 +110,13 @@
 				AD4334BC25A3405400755150 /* NFCArchiverApp.swift */,
 				AD4334BE25A3405400755150 /* AppView.swift */,
 				AD4334F025A3611700755150 /* WriterView.swift */,
+				529E41A425C0B195000C1A78 /* Item.swift */,
 				AD4334F825A3612100755150 /* ReaderView.swift */,
 				AD4334FD25A3612A00755150 /* NFCHandler.swift */,
 				AD4334C025A3405600755150 /* Assets.xcassets */,
 				AD4334C525A3405600755150 /* Info.plist */,
 				AD4334C225A3405600755150 /* Preview Content */,
+				529E419F25C0B149000C1A78 /* Tag.swift */,
 			);
 			path = NFCArchiver;
 			sourceTree = "<group>";
@@ -270,9 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				529E41A025C0B149000C1A78 /* Tag.swift in Sources */,
 				AD4334BF25A3405400755150 /* AppView.swift in Sources */,
 				AD4334FE25A3612A00755150 /* NFCHandler.swift in Sources */,
 				AD4334F925A3612100755150 /* ReaderView.swift in Sources */,
+				529E41A525C0B195000C1A78 /* Item.swift in Sources */,
 				AD4334BD25A3405400755150 /* NFCArchiverApp.swift in Sources */,
 				AD4334F125A3611700755150 /* WriterView.swift in Sources */,
 			);
