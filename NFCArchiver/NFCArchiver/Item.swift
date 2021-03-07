@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct Item {
+struct Item: Identifiable {
     let id: UUID
     var name: String
     var photoPath: String?
     
-    init(id: UUID?, name: String, photoPath: String?) {
+    init(id: UUID? = nil, name: String, photoPath: String?) {
         self.id = id ?? UUID()
         self.name = name
         self.photoPath = photoPath

@@ -8,8 +8,31 @@
 import SwiftUI
 
 struct ReaderView: View {
+    
+    
+    var items = [
+        Item(name: "Książki", photoPath: nil),
+        Item(name: "Zeszyty", photoPath: nil)
+    ]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Button("Edit items") {
+                //TODO
+            }
+            Text("Tag id")
+            Text("Tag description")
+            List(items) { item in
+                ItemRow(item: item)
+            }
+        }
+    }
+}
+
+struct ItemRow: View {
+    var item: Item
+
+    var body: some View {
+        Text(item.name)
     }
 }
 

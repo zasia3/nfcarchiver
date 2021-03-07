@@ -13,6 +13,7 @@ enum NFCHandlerError: Error {
 }
 
 class NFCHandler: NSObject {
+    private static let shared = NFCHandler()
     private var session: NFCNDEFReaderSession?
     
     func beginWrite(_ sender: Any) {

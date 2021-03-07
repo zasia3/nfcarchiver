@@ -9,6 +9,7 @@ import Foundation
 
 struct Tag {
     let id: UUID
+    var description: String?
     var items: [Item] = []
     
     init(id: UUID? = nil) {
